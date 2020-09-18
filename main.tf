@@ -1,12 +1,17 @@
 terraform {
-#   required_version = "= 0.12.29"
-   required_version = "= 0.13.03"
+  #   required_version = "= 0.12.29"
+  required_version = "= 0.13.03"
   required_providers {
     freeipa = {
-#      source = "-/freeipa"
-            source  = "camptocamp/freeipa"
+      #      source = "-/freeipa"
+      source  = "camptocamp/freeipa"
       version = "0.6.0"
     }
+    null = {
+      source  = "hashicorp/null"
+      version = "2.1.2"
+    }
+
   }
 }
 
