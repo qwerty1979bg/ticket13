@@ -1,0 +1,10 @@
+{
+  "archives": {
+    "darwin_amd64": {
+      "hashes": [
+        "h1:X4viH3Gat6C1lw1KfBnpJSokhEeN9kbj0xTV9UynW7o="
+      ],
+      "url": "terraform-provider-freeipa_0.6.0_darwin_amd64.zip"
+    }
+  }
+}
