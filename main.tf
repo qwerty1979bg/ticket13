@@ -1,9 +1,9 @@
 terraform {
-#   required_version = "= 0.12.29"
-   required_version = "= 0.13.03"
+   required_version = "= 0.12.29"
+#   required_version = "= 0.13.03"
   required_providers {
     freeipa = {
-      source = "-/freeipa"
+#      source = "-/freeipa"
 #            source  = "camptocamp/freeipa"
       version = "0.6.0"
     }
@@ -20,8 +20,8 @@ resource null_resource "no_op" {
 }
 
 # Add another "no op" resource, to make sure the state would be applied
-resource null_resource "no_op2" {
-}
+#resource null_resource "no_op2" {
+#}
 
 provider freeipa {
   #  host = "demo1.freeipa.org"
@@ -32,14 +32,14 @@ provider freeipa {
 }
 
 resource freeipa_host "foo" {
-  fqdn        = "foo.example.test"
+  fqdn        = "foo2.example.test"
   description = "This is my foo host"
   force       = true
   random      = true
 }
 
-resource freeipa_host "bar" {
-  fqdn         = "bar.example.test"
-  userpassword = "abcde"
-  force        = true
-}
+#resource freeipa_host "bar" {
+#  fqdn         = "bar.example.test"
+#  userpassword = "abcde"
+#  force        = true
+#}
