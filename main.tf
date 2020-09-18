@@ -1,3 +1,13 @@
+terraform {
+  required_providers {
+    freeipa = {
+      source  = "-/freeipa"
+#      source  = "camptocamp/freeipa"
+      version = "0.6.0"
+    }
+  }
+}
+
 provider freeipa {
   #  host = "demo1.freeipa.org"
   host     = "ipa.demo1.freeipa.org"
