@@ -19,7 +19,7 @@ terraform {
 resource null_resource "no_op" {
 }
 
- Add another "no op" resource, to make sure the state would be applied
+# Add another "no op" resource, to make sure the state would be applied
 resource null_resource "no_op2" {
 }
 
