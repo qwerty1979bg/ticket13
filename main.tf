@@ -1,16 +1,21 @@
 terraform {
+   required_version = "= 0.12.29"
   required_providers {
     freeipa = {
 #      source = "-/freeipa"
-            source  = "camptocamp/freeipa"
+#            source  = "camptocamp/freeipa"
       version = "0.6.0"
     }
   }
 }
 
-output "empty" {
+#output "empty" {
 #  value = null
-  value = "kor3"
+#  value = "kor3"
+#}
+
+# This adds a "no op" resource, to make sure the state would be applied
+resource null_resource "no_op" {
 }
 
 provider freeipa {
