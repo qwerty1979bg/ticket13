@@ -1,11 +1,16 @@
 terraform {
   required_providers {
     freeipa = {
-      source  = "-/freeipa"
-#      source  = "camptocamp/freeipa"
+      source = "freeipa"
+      #      source  = "-/freeipa"
+      #      source  = "camptocamp/freeipa"
       version = "0.6.0"
     }
   }
+}
+
+output "empty" {
+  value = null
 }
 
 provider freeipa {
