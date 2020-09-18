@@ -10,7 +10,7 @@ terraform {
 
 output "empty" {
 #  value = null
-  value = "kor"
+  value = "kor2"
 }
 
 provider freeipa {
